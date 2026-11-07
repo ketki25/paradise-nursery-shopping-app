@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: #f5f8f3; color: #243b30; }
+button, input { font: inherit; }
+
+.site-header { min-height: 76px; padding: 14px clamp(18px, 5vw, 70px); display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #173f32; color: #fff; }
+.brand { color: #fff; text-decoration: none; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
+.main-nav { display: flex; align-items: center; gap: clamp(14px, 3vw, 32px); }
+.main-nav a { color: #edf5ed; text-decoration: none; font-weight: 650; }
+.main-nav a.active, .main-nav a:hover { color: #c8e5b9; }
+.cart-count { display: inline-grid; place-items: center; min-width: 22px; height: 22px; margin-left: 4px; padding: 0 5px; border-radius: 99px; background: #d9edc8; color: #173f32; font-size: .78rem; }
+@media (max-width: 560px) { .site-header { align-items: flex-start; flex-direction: column; } .main-nav { width: 100%; justify-content: space-between; } }
+
+.navbar { min-height: 76px; padding: 14px clamp(18px, 5vw, 70px); display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #173f32; color: #fff; }
+.navbar-brand { color: #fff; text-decoration: none; font-family: Georgia, serif; font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
+.navbar-links { display: flex; align-items: center; gap: clamp(14px, 3vw, 32px); }
+.navbar-links a { color: #edf5ed; text-decoration: none; font-weight: 650; }
+.navbar-links a.active, .navbar-links a:hover { color: #c8e5b9; }
+.cart-quantity { display: inline-grid; place-items: center; min-width: 22px; height: 22px; margin-left: 4px; padding: 0 5px; border-radius: 99px; background: #d9edc8; color: #173f32; font-size: .78rem; }
+.cart-status { color: #42634f; font-weight: 700; margin: 12px 0 24px; }
+@media (max-width: 560px) { .navbar { align-items: flex-start; flex-direction: column; } .navbar-links { width: 100%; justify-content: space-between; } }
